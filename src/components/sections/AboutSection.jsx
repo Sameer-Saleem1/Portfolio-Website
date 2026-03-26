@@ -6,7 +6,7 @@ const highlights = [
 ]
 
 import profileAvatar from '../../assets/portfolio avatar.png'
-import Sameer from '../../assets/Sameer.jpg'
+import Sameer from '../../assets/sameer.jpg'
 
 function AboutSection() {
   return (

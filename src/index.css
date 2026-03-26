@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Default theme: DARK */
+    --surface: 19 19 20; /* #131314 */
+    --surface-low: 28 27 28; /* #1c1b1c */
+    --surface-highest: 53 52 54; /* #353436 */
+    --on-surface: 231 238 242; /* #e7eef2 */
+    --on-surface-variant: 187 201 207; /* #bbc9cf */
+    --outline-variant: 60 73 78; /* #3c494e */
+    --primary: 165 231 255; /* #a5e7ff */
+    --primary-container: 0 210 255; /* #00d2ff */
+    --secondary: 237 177 255; /* #edb1ff */
+    --secondary-container: 110 32 140; /* #6e208c */
+    --error: 255 180 171; /* #ffb4ab */
+  }
+
+  html[data-theme='light'] {
+    --surface: 245 246 248;
+    --surface-low: 235 237 241;
+    --surface-highest: 214 219 226;
+    --on-surface: 14 18 24;
+    --on-surface-variant: 58 72 84;
+    --outline-variant: 60 73 78;
+    --primary: 0 155 210;
+    --primary-container: 0 210 255;
+    --secondary: 144 70 174;
+    --secondary-container: 110 32 140;
+    --error: 214 57 50;
+  }
+
+  html,
+  body,
+  #root {
+    height: 100%;
+  }
+
+  body {
+    margin: 0;
+    font-family: theme(fontFamily.sans);
+    background: theme(colors.surface);
+    color: theme(colors.on-surface-variant);
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+@layer utilities {
+  .text-luminous {
+    background-image: theme(backgroundImage.luminous);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  .glass {
+    background: color-mix(in srgb, rgb(var(--surface-low)) 70%, transparent);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+  }
+
+  .ghost-outline {
+    outline: 1px solid rgba(60, 73, 78, 0.15);
+    outline-offset: -1px;
+  }
+
+  .glow-primary {
+    box-shadow: 0 0 20px color-mix(in srgb, rgb(var(--primary-container)) 20%, transparent);
+  }
+}

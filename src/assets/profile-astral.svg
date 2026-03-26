@@ -1,0 +1,80 @@
+<svg width="900" height="900" viewBox="0 0 900 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="bg" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(450 220) rotate(90) scale(520)">
+      <stop offset="0" stop-color="#1C1B1C"/>
+      <stop offset="0.55" stop-color="#131314"/>
+      <stop offset="1" stop-color="#0E0F12"/>
+    </radialGradient>
+    <radialGradient id="nebula" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(520 180) rotate(115) scale(520 620)">
+      <stop offset="0" stop-color="#00D2FF" stop-opacity="0.22"/>
+      <stop offset="0.48" stop-color="#A5E7FF" stop-opacity="0.10"/>
+      <stop offset="0.72" stop-color="#EDB1FF" stop-opacity="0.12"/>
+      <stop offset="1" stop-color="#6E208C" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="rim" x1="190" y1="180" x2="710" y2="720" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#00D2FF"/>
+      <stop offset="0.55" stop-color="#A5E7FF"/>
+      <stop offset="1" stop-color="#EDB1FF"/>
+    </linearGradient>
+    <filter id="blur20" x="-40%" y="-40%" width="180%" height="180%" filterUnits="objectBoundingBox">
+      <feGaussianBlur stdDeviation="20"/>
+    </filter>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="24" stdDeviation="22" flood-color="#000000" flood-opacity="0.55"/>
+    </filter>
+    <linearGradient id="glass" x1="230" y1="210" x2="690" y2="690" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#353436" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#1C1B1C" stop-opacity="0.35"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect x="0" y="0" width="900" height="900" rx="180" fill="url(#bg)"/>
+  <rect x="0" y="0" width="900" height="900" rx="180" fill="url(#nebula)"/>
+
+  <!-- Subtle stars -->
+  <g opacity="0.55">
+    <circle cx="210" cy="190" r="2" fill="#E7EEF2" fill-opacity="0.55"/>
+    <circle cx="680" cy="230" r="1.6" fill="#E7EEF2" fill-opacity="0.40"/>
+    <circle cx="590" cy="140" r="1.2" fill="#E7EEF2" fill-opacity="0.35"/>
+    <circle cx="330" cy="130" r="1.1" fill="#E7EEF2" fill-opacity="0.30"/>
+    <circle cx="740" cy="360" r="1.4" fill="#E7EEF2" fill-opacity="0.28"/>
+    <circle cx="160" cy="390" r="1.3" fill="#E7EEF2" fill-opacity="0.25"/>
+    <circle cx="240" cy="520" r="1.1" fill="#E7EEF2" fill-opacity="0.22"/>
+    <circle cx="710" cy="540" r="1.2" fill="#E7EEF2" fill-opacity="0.22"/>
+  </g>
+
+  <!-- Glow ring -->
+  <circle cx="450" cy="430" r="260" fill="none" stroke="url(#rim)" stroke-width="10" opacity="0.40" filter="url(#blur20)"/>
+  <circle cx="450" cy="430" r="250" fill="none" stroke="url(#rim)" stroke-width="5" opacity="0.55"/>
+
+  <!-- Glass panel -->
+  <g filter="url(#shadow)">
+    <rect x="220" y="170" width="460" height="560" rx="72" fill="url(#glass)" stroke="#3C494E" stroke-opacity="0.18"/>
+  </g>
+
+  <!-- Abstract portrait -->
+  <g>
+    <!-- Head -->
+    <path d="M450 300c78 0 132 56 132 130 0 82-60 144-132 144s-132-62-132-144c0-74 54-130 132-130Z"
+          fill="#BBC9CF" fill-opacity="0.10"/>
+    <path d="M450 312c70 0 118 50 118 118 0 74-54 132-118 132s-118-58-118-132c0-68 48-118 118-118Z"
+          fill="#E7EEF2" fill-opacity="0.08"/>
+
+    <!-- Rim light -->
+    <path d="M333 430c0-68 48-118 118-118 62 0 106 39 116 95"
+          stroke="#00D2FF" stroke-opacity="0.30" stroke-width="10" stroke-linecap="round" filter="url(#blur20)"/>
+    <path d="M566 456c-10 60-58 106-116 106-66 0-118-58-118-132"
+          stroke="#EDB1FF" stroke-opacity="0.22" stroke-width="10" stroke-linecap="round" filter="url(#blur20)"/>
+
+    <!-- Shoulders -->
+    <path d="M250 720c22-110 120-184 200-184h0c80 0 178 74 200 184"
+          fill="#1C1B1C" fill-opacity="0.35"/>
+    <path d="M270 720c18-96 106-160 180-160h0c74 0 162 64 180 160"
+          fill="#353436" fill-opacity="0.22"/>
+
+    <!-- Chest highlight -->
+    <path d="M360 610c34 10 70 10 105 0 12-4 25 3 28 15l10 40c3 12-4 24-15 27-54 15-112 15-166 0-12-3-18-15-15-27l10-40c3-12 16-19 28-15Z"
+          fill="#00D2FF" fill-opacity="0.10"/>
+  </g>
+</svg>

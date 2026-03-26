@@ -1,0 +1,66 @@
+[
+  {
+    "title": "Cast Bunny",
+    "desc": "A web application that allows users to cast videos to their devices using the Cast SDK.",
+    "tags": ["React.js", "Tailwind CSS", "PostgreSQL", "Prisma", "Express.js"],
+    "image": "/projects/cast-bunny.png",
+    "demoUrl": "https://castbunny.com/",
+    "codeUrl": ""
+  },
+  {
+    "title": "Lunaris Market",
+    "desc": "Commerce backend with App Router, secure authentication, and admin product/category APIs.",
+    "tags": ["Next.js", "PostgreSQL", "Prisma", "AuthN/AuthZ"],
+    "image": "/projects/lunaris-market.png",
+    "demoUrl": "https://lunaris-market.vercel.app/",
+    "codeUrl": "https://github.com/Sameer-Saleem1/Lunaris-Market"
+  },
+  {
+    "title": "Vocal-Bloom - AI Powered Speech Therapy",
+    "desc": "AI-powered speech therapy app for autistic children with encrypted Firebase-backed records.",
+    "tags": ["Next.js", "Tailwind CSS", "Firebase", "Node.js"],
+    "image": "/projects/vocal-bloom.png",
+    "demoUrl": "https://vocal-bloom.vercel.app/",
+    "codeUrl": "https://github.com/Sameer-Saleem1/VocalBloom"
+  },
+  {
+    "title": "AI-Powered Developer Interview Simulator",
+    "desc": "Real-time interview simulation with automated feedback scoring using Hugging Face models.",
+    "tags": ["React.js", "Express.js", "Hugging Face", "Drizzle ORM"],
+    "image": "/projects/ai-powered-simulator.png",
+    "demoUrl": "https://ai-powered-developer-interview-simu.vercel.app/",
+    "codeUrl": "https://github.com/Sameer-Saleem1/AI-Powered-Developer-Interview-Simulator-Frontend"
+  },
+  {
+    "title": "DCode Dynamics",
+    "desc": "A dynamic website for a software development company that provides software development services.",
+    "tags": ["React.js", "Tailwind CSS", "JavaScript", "Git"],
+    "image": "/projects/dcode-dynamics.png",
+    "demoUrl": "https://dcode-dynamics.vercel.app/",
+    "codeUrl": "https://github.com/Sameer-Saleem1/DCodeDynamics"
+  },
+  {
+    "title": "Hasee Qureshi Portfolio",
+    "desc": "A portfolio website for a UI/UX designer that provides UI/UX design services.",
+    "tags": ["React.js", "Tailwind CSS", "JavaScript", "Git"],
+    "image": "/projects/haseeb-qureshi-portfolio.png",
+    "demoUrl": "https://haseeb-qureshi-portfolio.vercel.app/",
+    "codeUrl": "https://github.com/Sameer-Saleem1/haseeb-qureshi-portfolio"
+  },
+  {
+    "title": "Aura Canvas Dashboard",
+    "desc": "Dashboard prototype for managing records of celebrity online stores with improved UI/UX.",
+    "tags": ["React.js", "Material UI", "JavaScript", "Git"],
+    "image": "/projects/aura-canvas.png",
+    "demoUrl": "https://aura-canvas.vercel.app",
+    "codeUrl": "https://github.com/Sameer-Saleem1/Aura-Canvas"
+  },
+  {
+    "title": "Open AI Clone",
+    "desc": "A clone of the Open AI website that allows users to generate text using the Open AI API.",
+    "tags": ["React.js", "Tailwind CSS", "JavaScript", "Git"],
+    "image": "/projects/open-ai-clone.png",
+    "demoUrl": "https://open-ai-clone-chi.vercel.app/",
+    "codeUrl": "https://github.com/Sameer-Saleem1/Open-AI-Clone"
+  }
+]

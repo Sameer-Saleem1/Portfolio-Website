@@ -6,6 +6,7 @@ const highlights = [
 ]
 
 import profileAvatar from '../../assets/portfolio avatar.png'
+import Sameer from '../../assets/Sameer.jpg'
 
 function AboutSection() {
   return (
@@ -15,7 +16,7 @@ function AboutSection() {
           <div className="rounded-3xl bg-surface-low p-6 sm:p-8">
             <div className="aspect-[4/3] overflow-hidden rounded-2xl bg-surface-highest/30 ghost-outline">
               <img
-                src={profileAvatar}
+                src={Sameer}
                 alt="Profile illustration"
                 className="h-full w-full object-cover"
                 loading="lazy"
